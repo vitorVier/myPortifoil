@@ -23,11 +23,18 @@ html {
         height: 100px;
         padding: 0 24px;
         top: 0;
-        color: #1E96FC;
         background: #181818;
         z-index: 999;
     }
-    
+
+    header a {
+        flex: 1;
+        min-width: 130px;
+        text-decoration: none;
+        color: #1E96FC;
+        cursor: pointer;
+    }
+
     header strong {
         color: #fff;
     }
@@ -46,8 +53,9 @@ html {
         color: #ddd;
     }
     
-    .nav-list a:hover {
+    .nav-list a:hover{
         color: #fff;
+        text-shadow: 0 0 10px #fff;
     }
 /* FIM HEADER STYLE */
   
@@ -93,7 +101,7 @@ html {
     }
     
     .call-to-action:hover {
-        transform: scale(1.1);
+        transform: scale(1.07);
     }
 /* FIM MAIN STYLE */
   
@@ -222,6 +230,7 @@ html {
     /* INICIO ABOUT */
         .about {
             flex-direction: column;
+            text-align: center;
             padding: 80px 0 0 0;
         }
 
@@ -260,4 +269,41 @@ html {
             margin: 8px 0 0 0;
         }
     /* FIM PROJECTS */
+}
+
+@media (max-width: 570px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .nav-list a {
+        position: relative;
+        left: 30px;
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 17px;
+    }
+
+    .nav-list a {
+        left: 10;
+        padding: 9px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 374px) {
+    header h1 {
+        font-size: 17px;
+    }
+
+    .nav-list a {
+        left: 0;
+        padding: 5px;
+        font-size: 14px;
+    }
 }
